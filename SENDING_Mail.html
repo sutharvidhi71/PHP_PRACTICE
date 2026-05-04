@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mail sending</title>
+</head>
+<body>
+    <?php
+    $to="sutharvidhi71@gamil.com";
+    $subject="demo";
+    $message="sending email via php main() function";
+    ?>
+    if(mail($to,$subject,$message)){
+        echo "mail sent successfuly";
+    }
+</body>
+</html>

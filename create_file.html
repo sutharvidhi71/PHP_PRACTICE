@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE FILE</title>
+</head>
+<body>
+    <?php
+    $file_name="hello.txt";
+    $file=fopen("$file_name","+w");
+    $file_data="Hello!, World\n";
+    fwrite($file,$file_data);
+    $size=filesize($file_name);
+
+    $print= fread($file,$size);
+    echo $print;
+    ?>
+</body>
+</html>
