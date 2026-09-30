@@ -6,13 +6,21 @@
     <title>mail sending</title>
 </head>
 <body>
-    <?php
-    $to="sutharvidhi71@gamil.com";
-    $subject="demo";
+
+
+        <?php
+        $to="sutharvidhi71@gamil.com";
+        $subject="demo";
     $message="sending email via php main() function";
-    ?>
+    
     if(mail($to,$subject,$message)){
         echo "mail sent successfuly";
     }
+    else{
+        echo "erro";
+    }
+    echo ini_set();
+    ?>
+
 </body>
 </html>
